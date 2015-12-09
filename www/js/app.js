@@ -26,7 +26,8 @@ IonicBankApp.config(function ($stateProvider,$urlRouterProvider) {
                 url: '/home',
                 templateUrl: 'templates/home.html',
                 controller: 'HomeCtrl'
-            });
+            })
+
 
         $urlRouterProvider.otherwise('/home');
 
