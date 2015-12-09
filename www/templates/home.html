@@ -3,40 +3,48 @@
 
     </ion-nav-bar>
     <ion-content>
-        <div class="row">
-            <div class="col">
-                <i class="ion-android-radio-button-on"></i>
+
+        <div class="text-center">
+            <div class="row">
+                <div class="col">
+                    <i class="ion-android-radio-button-on"></i>
+                </div>
+                <div class="col">
+                    <i class="ion-android-radio-button-on"></i>
+                </div>
             </div>
-            <div class="col">
-                <i class="ion-android-radio-button-on"></i>
+            <div class="row">
+
+                <div class="col">
+
+                    Contact
+                </div>
+                <div class="col">Pay</div>
             </div>
         </div>
-        <div class="row">
 
-            <div class="col">
 
-                Contact
-            </div>
-            <div class="col">Pay</div>
-        </div>
+        <a class="item item-avatar" href="#">
+            <img src="img/ionic.png">
 
-        <div class="row">
+        </a>
+        <a class="item item-avatar" href="#">
+            <img src="img/ionic.png">
 
-            <div class="item item-avatar">
-                <img src="img/ionic.png">
+        </a>
 
-            </div>
-            <a class="item item-avatar" href="#">
-                <img src="img/ionic.png">
-
-            </a>
-        </div>
 
         <div class="list card">
 
             <label class="item item-input item-select">
                 You Send:
-                <input type="tel" placeholder="0.00">
+                <input type="tel" placeholder="0.00" ng-model="sendMoney">
+                <option selected>GBP</option>
+            </label>
+
+            <label class="item item-input item-select">
+                Jeff Receivers
+                <input type="tel" placeholder="0.00" ng-model="receiveMoney">
                 <select>
                     <option selected>GBP</option>
                     <option>USD</option>
@@ -45,13 +53,8 @@
             </label>
 
             <label class="item item-input">
-                Jeff Receivers:
-                <input type="tel" placeholder="0.00">
-            </label>
-
-            <label class="item item-input">
                 For:
-                <input type="text" placeholder="For dinner,rent,etc">
+                <input type="text" placeholder="For dinner,rent,etc" ng-model="purpose">
             </label>
 
         </div>
@@ -71,6 +74,10 @@
             </a>
 
         </div>
+
+
+
+
 
 
     </ion-content>
