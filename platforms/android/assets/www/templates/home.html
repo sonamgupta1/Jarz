@@ -60,37 +60,50 @@
 
         <div class="list card">
 
-            <label class="item item-input item-select">
+           <div class="row">
+               <div class="col">
+                   You Send:
+               </div>
+               <div class="col">
+                   <input type="text" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
+               </div>
+               <div class="col">
+                   <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
 
-                You Send:
+                       <!--<option selected>GBP</option>-->
 
-                <input type="text" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
+                       <!--for multiple currency option to select-->
+                       <option value="">Choose Currency</option>
+                       <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
+                   </select>
+               </div>
+           </div>
 
-                <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
-
-                    <option selected>GBP</option>
-
-                        <!--for multiple currency option to select-->
-                    <!--<option value="">Select</option>-->
-                    <!--<option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>-->
-                </select>
-            </label>
-
-            <label class="item item-input item-select">
-                <div class="input-label">
-                    Jeff Receivers: {{exchangeRate}}
-
+            <div class="row">
+                <div class="col">
+                    Jeff Receivers:
                 </div>
-                <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
-                    <option value=""></option>
-                    <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
-                </select>
-            </label>
+                <div class="col">
+                    <input type="text" ng-model="exchangeRate" placeholder="  0.00" ng-disabled="true">
+                    <!--{{exchangeRate}}-->
+                </div>
+                <div class="col">
+                    <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
+                        <option value="">Choose Currency</option>
+                        <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
+                    </select>
+                </div>
+            </div>
 
-            <label class="item item-input">
-                For:
-                <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
-            </label>
+            <div class="row">
+                <div class="col">
+                    For:
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
+                </div>
+                <div class="col"></div>
+            </div>
 
         </div>
 
