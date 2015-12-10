@@ -12,9 +12,15 @@ border-top: 1px solid #e7e7e7;
 .noPaddingBottom{
 	padding-bottom: 0 !important;
 }
+.noMarginTop{
+	margin-top: 0 !important;
+}
+.marginTopForCard{
+	margin-top: 4px !important;
+}
 .headerBg{
  background: #ecf0f3;
- padding:10px 0;
+ padding:15px 0;
  margin-bottom: 17px;
  border-bottom: 1px solid #d4d8da;
 }
@@ -55,6 +61,7 @@ overflow: hidden;
 	vertical-align: top;
 	color: #4c4e4e;
 	font-size: 1.5em;
+	line-height: 25px;
 }
 .payWrapper h4{
 margin: 0 0 5px 0;
@@ -91,12 +98,13 @@ border-radius: 5px;
    padding: 3px;
    border: 4px solid #d5dbdf;
 border-radius: 100%;
+background: #ecf0f3;
 }
 .number span{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	line-height: 200%;
+	line-height: 30px;
 	background:#d5dbdf;
 	border-radius: 100%;
 	color: #fff;
@@ -110,11 +118,11 @@ border-radius: 100%;
 		color:#4c4e4e;
 		line-height: 185%;
 }
-.marginLeft10Pre{
-	margin-left: 10%;
+.marginLeft14Pre{
+	margin-left: 14%;
 }
-.marginRight10Pre{
-	margin-right: 10%;
+.marginRight14Pre{
+	margin-right: 14%;
 }
 .youSend{
 	padding: 0 5px !important;
@@ -179,7 +187,7 @@ color: #359cd6;
 }
 .pullRight{
 	float: right;
-	margin: -10px 13% 0 4%;
+	margin: -8px 13% 0 4%;
 }
 .transfer {
 	margin: 20px 0 60px 0 !important;

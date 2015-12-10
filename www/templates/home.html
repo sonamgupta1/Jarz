@@ -4,12 +4,12 @@
 <ion-content>
 <div class="mainBg">
     <div class="row headerBg">
-        <div class="contactWrapper marginLeft10Pre text-center">
+        <div class="contactWrapper marginLeft14Pre text-center">
             <div class="number"><span>1</span></div>
             <span>Contact</span>
         </div>
         <div class="connector"></div>
-        <div class="contactWrapper marginRight10Pre text-center">
+        <div class="contactWrapper marginRight14Pre text-center">
             <div class="number active"><span>2</span></div>
             <span>Pay</span>
         </div>
@@ -28,7 +28,7 @@
             <span class="nameDiv text-left">Jeff</span>
         </div>
     </div>
-    <div class="list card text-left">
+    <div class="list card text-left marginTopForCard">
         <div class="row youSend">
             <div class="col col-33 noPaddingBottom">
                 <span>You Send:</span>
@@ -47,7 +47,7 @@
         </div>
         <div class="row youSend borderTop1Px">
             <div class="col col-33 noPaddingBottom">
-                <span>Jeff Receivers:</span>
+                <span class="noMarginTop">Jeff <br>Receivers:</span>
             </div>
             <div class="col col-33 noPaddingBottom">
                 <input type="text" ng-model="exchangeRate" placeholder="  0.00" ng-disabled="true">
@@ -76,7 +76,7 @@
             </h4>
             <span></span>
             <!-- <h6>
-           <div class="estimated"> Estimated Rate is 1.5618  </div><img src="img/question-mark.png" class="questionMargin">
+            <div class="estimated"> Estimated Rate is 1.5618  </div><img src="img/question-mark.png" class="questionMargin">
             </h6>
             <h6> Fee is 0</h6>
             <a href="#">
@@ -84,23 +84,21 @@
             </a> -->
         </div>
     </div>
-
-<div class="row">
-<div class="col text-right estimated">
-    <span>Estimated Rate is 1.5618</span> <span class="pullRight" ng-click="popupDemo()"><img src="img/question-mark.png"></span>
+    <div class="row">
+        <div class="col text-right estimated">
+            <span>Estimated Rate is 1.5618</span> <span class="pullRight" ng-click="popupDemo()"><img src="img/question-mark.png"></span>
+        </div>
     </div>
-</div>
-<div class="row">
-<div class="col text-center estimated">
-Fee is 0
-</div>
-</div>
-
-<div class="row">
-<div class="col text-right estimated transfer">
- <span><a href="#">Redeem Free Transfer </a></span> <span class="pullRight" ng-click="popupDemoNext()"><img src="img/question-mark.png"></span>
-</div>
-</div>
+    <div class="row">
+        <div class="col text-center estimated">
+            Fee is 0
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right estimated transfer">
+            <span><a href="#">Redeem Free Transfer </a></span> <span class="pullRight" ng-click="popupDemoNext()"><img src="img/question-mark.png"></span>
+        </div>
+    </div>
 </div>
 </ion-content>
 <div class="bar bar-footer footerHeaderColor">
