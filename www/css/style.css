@@ -14,8 +14,8 @@ border-top: 1px solid #e7e7e7;
 }
 .headerBg{
  background: #ecf0f3;
- padding:20px 0;
- margin-bottom: 35px;
+ padding:10px 0;
+ margin-bottom: 17px;
  border-bottom: 1px solid #d4d8da;
 }
 .userWrapper{
@@ -64,23 +64,12 @@ font-size: 1.6em;
 .payWrapper span{
 width: 20%;
 height: 5px;
+margin:16px 0;
 display: inline-block;
 background: #ccd2d8;
 	-webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
-}
-.payWrapper h6{
-margin: 16px 0;
-color: #404242;
-font-size: 1.2em;
-}
-.payWrapper a{
-color: #359cd6;
-font-size: 1.2em;
-font-weight: normal;
-display: block;
-margin-bottom: 40px;
 }
 .contactWrapper span{
 	word-wrap:normal;
@@ -156,14 +145,15 @@ border-radius: 100%;
 	line-height: 25px;
 	margin-top: -6px;
 	margin-bottom: 1px;
-	padding:15px 10px;
+	padding:0 10px;
+	height: 50px;
 	background:#2b80b0;
 }
 .forPadding{
 	padding-bottom: 8px !important;
 }
 .mainBg{
-	background: url(../img/mainBg.png) center 300px no-repeat;
+	background: url(../img/mainBg.png) center 265px no-repeat;
 }
 .popup-container.active .popup{
 	border-radius: 5px;
@@ -175,4 +165,22 @@ display: none;
 .popup-body{
 	color: #4c4e4e;
 }
-
+.estimated{
+	color: #404242;
+      font-size: 1.2em;
+      padding-bottom: 0;
+      padding-top:0;
+}
+.estimated span{
+	display: inline-block;
+}
+.estimated span a{
+color: #359cd6;
+}
+.pullRight{
+	float: right;
+	margin: -10px 13% 0 4%;
+}
+.transfer {
+	margin: 20px 0 60px 0 !important;
+}
