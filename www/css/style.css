@@ -3,11 +3,20 @@
     background-color:#359CD6;
     color: #FFFFFF;
 }
-.borderRed{
-	border: 1px solid red;
-}
 .positionRel{
 	position: relative;
+}
+.borderTop1Px{
+border-top: 1px solid #e7e7e7;
+}
+.noPaddingBottom{
+	padding-bottom: 0 !important;
+}
+.headerBg{
+ background: #ecf0f3;
+ padding:20px 0;
+ margin-bottom: 35px;
+ border-bottom: 1px solid #d4d8da;
 }
 .userWrapper{
 	display: inline-block;
@@ -70,9 +79,8 @@ font-size: 1.2em;
 color: #359cd6;
 font-size: 1.2em;
 font-weight: normal;
-}
-.contactWrapper{
-	border: 1px solid red;
+display: block;
+margin-bottom: 40px;
 }
 .contactWrapper span{
 	word-wrap:normal;
@@ -119,3 +127,52 @@ border-radius: 100%;
 .marginRight10Pre{
 	margin-right: 10%;
 }
+.youSend{
+	padding: 0 5px !important;
+	margin-top: 0px !important;
+}
+.youSend span{
+	display: inline-block;
+	color: #abbbc6;
+	font-size: 1.1em;
+	 margin-top: 12px;
+}
+.youSend input[type="text"], .youSend input[type="tel"]{
+	width: 100%;
+	color: #182931;
+	font-size: 1.2em;
+	border: 0px none;
+	height: auto;
+	line-height: 25px;
+	margin-top: 7px;
+	background: none;
+}
+.youSend select{
+	width: 100%;
+	color: #fff;
+	font-size: 1.1em;
+	border: 0px none;
+	height: auto;
+	line-height: 25px;
+	margin-top: -6px;
+	margin-bottom: 1px;
+	padding:15px 10px;
+	background:#2b80b0;
+}
+.forPadding{
+	padding-bottom: 8px !important;
+}
+.mainBg{
+	background: url(../img/mainBg.png) center 300px no-repeat;
+}
+.popup-container.active .popup{
+	border-radius: 5px;
+	width: 90%;
+}
+.popup-head{
+display: none;
+}
+.popup-body{
+	color: #4c4e4e;
+}
+
