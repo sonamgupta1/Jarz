@@ -1,101 +1,101 @@
 <ion-view title="Jarz">
-<ion-nav-bar align-title="center" class="footerHeaderColor header-size">
-</ion-nav-bar>
-<ion-content>
+    <ion-nav-bar align-title="center" class="footerHeaderColor header-size">
+    </ion-nav-bar>
+    <ion-content>
 
-<div class="mainBg">
-<div class="row headerBg">
-    <div class="contactWrapper marginLeft10Pre text-center">
-        <div class="number"><span>1</span></div>
-        <span>Contact</span>
-    </div>
-    <div class="connector"></div>
-    <div class="contactWrapper marginRight10Pre text-center">
-        <div class="number active"><span>2</span></div>
-        <span>Pay</span>
-    </div>
-</div>
-<div class="row">
-    <div class="col text-center positionRel">
-        <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
-        <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
-        <div class="dolerLogo"><img src="img/doller-logo.png"></div>
-    </div>
-</div>
-<div class="row">
-    <div class="col text-center">
-        <span class="nameDiv text-right">You</span>
-        <span class="arrrow text-center"><img src="img/arrow.png"></span>
-        <span class="nameDiv text-left">Jeff</span>
-    </div>
-</div>
-<div class="list card text-left">
-    <div class="row youSend">
-        <div class="col col-33 noPaddingBottom">
-            <span>You Send:</span>
-        </div>
-        <div class="col col-33 noPaddingBottom">
-            <input type="tel" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
-        </div>
-        <div class="col col-33 noPaddingBottom">
-            <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
-                <!--<option selected>GBP</option>-->
-                <!--for multiple currency option to select-->
-                <option value="">AED</option>
-                <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
-            </select>
-        </div>
-    </div>
-    <div class="row youSend borderTop1Px">
-        <div class="col col-33 noPaddingBottom">
-            <span>Jeff Receivers:</span>
-        </div>
-        <div class="col col-33 noPaddingBottom">
-            <input type="text" ng-model="exchangeRate" placeholder="  0.00" ng-disabled="true">
-            <!--{{exchangeRate}}-->
-        </div>
-        <div class="col col-33 noPaddingBottom">
-            <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
-                <option value="">AED</option>
-                <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
-            </select>
-        </div>
-    </div>
-    <div class="row youSend borderTop1Px forPadding">
-        <div class="col col-33">
-            <span>  For:</span>
-        </div>
-        <div class="col col-67">
-            <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col text-center payWrapper">
-        <h4>
-        Pay Very Little
-        </h4>
-        <span></span>
-        <h6>
-        Estimated Rate is 1.5618 Fee is 0
-        </h6>
-        <a href="#">
-            Redeem Free Transfer
-        </a>
-    </div>
-</div>
-<div ng-click="popupDemo()" class="TEST">
-    Popup1
-</div>
-<div ng-click="popupDemoNext()">
-    Popup2
-</div>
+        <div class="mainBg">
+            <div class="row headerBg">
+                <div class="contactWrapper marginLeft10Pre text-center">
+                    <div class="number"><span>1</span></div>
+                    <span>Contact</span>
+                </div>
+                <div class="connector"></div>
+                <div class="contactWrapper marginRight10Pre text-center">
+                    <div class="number active"><span>2</span></div>
+                    <span>Pay</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center positionRel">
+                    <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
+                    <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
+                    <div class="dolerLogo"><img src="img/doller-logo.png"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <span class="nameDiv text-right">You</span>
+                    <span class="arrrow text-center"><img src="img/arrow.png"></span>
+                    <span class="nameDiv text-left">Jeff</span>
+                </div>
+            </div>
+            <div class="list card text-left">
+                <div class="row youSend">
+                    <div class="col col-33 noPaddingBottom">
+                        <span>You Send:</span>
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <input type="tel" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
+                            <!--<option selected>GBP</option>-->
+                            <!--for multiple currency option to select-->
+                            <option value="">AED</option>
+                            <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row youSend borderTop1Px">
+                    <div class="col col-33 noPaddingBottom">
+                        <span>Jeff Receivers:</span>
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <input type="text" ng-model="exchangeRate" placeholder="  0.00" ng-disabled="true">
+                        <!--{{exchangeRate}}-->
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
+                            <option value="">AED</option>
+                            <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row youSend borderTop1Px forPadding">
+                    <div class="col col-33">
+                        <span>  For:</span>
+                    </div>
+                    <div class="col col-67">
+                        <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center payWrapper">
+                    <h4>
+                        Pay Very Little
+                    </h4>
+                    <span></span>
+                    <h6>
+                        Estimated Rate is 1.5618 Fee is 0
+                    </h6>
+                    <a href="#">
+                        Redeem Free Transfer
+                    </a>
+                </div>
+            </div>
+            <div ng-click="popupDemo()" class="TEST">
+                Popup1
+            </div>
+            <div ng-click="popupDemoNext()">
+                Popup2
+            </div>
 
-</div>
+        </div>
 
 
-</ion-content>
-<div class="bar bar-footer footerHeaderColor">
-    <div class="title">PAY JAFF</div>
-</div>
+    </ion-content>
+    <div class="bar bar-footer footerHeaderColor">
+        <div class="title">PAY JAFF</div>
+    </div>
 </ion-view>
