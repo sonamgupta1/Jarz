@@ -76,9 +76,14 @@
                         Pay Very Little
                     </h4>
                     <span></span>
-                    <h6>
-                        Estimated Rate is 1.5618 Fee is 0
-                    </h6>
+            <h6 ng-hide="exchangeRate">
+                Estimated Rate is 1.5618 Fee is 0
+            </h6>
+
+            <h6 ng-show="exchangeRate">
+                Estimated Rate is 1.5618 Fee is 2.00 GBP
+            </h6>
+
                     <a href="#">
                         Redeem Free Transfer
                     </a>
