@@ -1,83 +1,57 @@
 <ion-view title="Jarz">
     <ion-nav-bar align-title="center" class="footerHeaderColor header-size">
-
     </ion-nav-bar>
     <ion-content>
 
-        <div class="text-center" style="background-color:#e4e5e7">
-            <div class="row">
-                <div class="col">
-                    <i class="ion-android-radio-button-on">1</i>
-                </div>
-                <div class="col">
-                    <i class="ion-android-radio-button-on">2</i>
-                </div>
+
+        <div class="row">
+
+            <div class="contactWrapper marginLeft10Pre text-center">
+                <div class="number"><span>1</span></div>
+                <span>Contact</span>
             </div>
-            <div class="row">
-
-                <div class="col">
-
-                    Contact
-                </div>
-                <div class="col">Pay</div>
+            <div class="connector"></div>
+            <div class="contactWrapper marginRight10Pre text-center">
+                <div class="number active"><span>2</span></div>
+                <span>Pay</span>
             </div>
-
         </div>
 
 
-        <div class="row text-center">
-            <div class="col">
-
-                <div>
-                    <span class="item item-avatar">
-                    <img src="img/icon.png">
-
-                    </span>
-                    You
-                </div>
+        <div class="row borderRed">
+            <div class="col text-center positionRel">
+                <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
+                <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
+                <div class="dolerLogo"><img src="img/doller-logo.png"></div>
             </div>
-
-            <div class="col">
-
-                <div>
-                    <span class="item item-avatar">
-                    <img src="img/icon.png">
-                    </span>
-                </div>
-            </div>
-            <div class="col">
-
-                <div>
-                    <span class="item item-avatar">
-                    <img src="img/icon.png">
-                    </span>
-                    Jaff
-                </div>
-            </div>
-
         </div>
-
-
+        <div class="row borderRed">
+            <div class="col text-center">
+                <span class="nameDiv text-right">You</span>
+                <span class="arrrow text-center"><img src="img/arrow.png"></span>
+                <span class="nameDiv text-left">Jeff</span>
+            </div>
+        </div>
         <div class="list card">
 
-           <div class="row">
-               <div class="col">
-                   You Send:
-               </div>
-               <div class="col">
-                   <input type="tel" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
-               </div>
-               <div class="col">
-                   <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
+            <div class="row">
+                <div class="col">
+                    You Send:
+                </div>
+                <div class="col">
+                    <input type="tel" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
+                </div>
+                <div class="col">
+                    <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
 
-                       <!--<option selected>GBP</option>-->
+                        <!--<option selected>GBP</option>-->
 
-                       <!--for multiple currency option to select-->
-                       <option value="">Choose Currency</option>
-                       <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
-                   </select>
-               </div>
-           </div>
+                        <!--for multiple currency option to select-->
+                        <option value="">Choose Currency</option>
+                        <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
+                    </select>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col">
@@ -107,36 +81,33 @@
 
         </div>
 
-        <div class="text-center">
+        <div class="row">
+            <div class="col text-center payWrapper">
 
-            <h4>
-                Pay Very Little
-            </h4>
+                <h4>
+                    Pay Very Little
+                </h4>
 
-            <h6 ng-hide="exchangeRate">
-                Estimated Rate is 1.5618 Fee is 0
-            </h6>
+                <span></span>
 
-            <h6 ng-show="exchangeRate">
-                Estimated Rate is 1.5618 Fee is 2.00 GBP
-            </h6>
-
-            <a href="#">
-                Redeem Free Transfer
-            </a>
-
+                <h6>
+                    Estimated Rate is 1.5618 Fee is 0
+                </h6>
+                <a href="#">
+                    Redeem Free Transfer
+                </a>
+            </div>
         </div>
+
+
         <div ng-click="popupDemo()">
             Popup1
         </div>
-
         <div ng-click="popupDemoNext()">
             Popup2
         </div>
-
     </ion-content>
     <div class="bar bar-footer footerHeaderColor">
         <div class="title">PAY JAFF</div>
     </div>
 </ion-view>
-

@@ -2,11 +2,120 @@
 .footerHeaderColor{
     background-color:#359CD6;
     color: #FFFFFF;
-
 }
-/*.verticalLine {*/
-    /*border-bottom: thick solid #ff0000;*/
-    /*margin-left: 600px;*/
-    /*margin-right: 600px;*/
-    /*position: relative;*/
-/*}*/
+.borderRed{
+	border: 1px solid red;
+}
+.positionRel{
+	position: relative;
+}
+.userWrapper{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+overflow: hidden;
+}
+.userWrapper img{
+	width: 100%;
+	height: 100%;
+}
+.marginleftMinus5Px{
+	margin-left: -5px;
+}
+.dolerLogo{
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	width: 13%;
+	margin-left: -6.5%;
+}
+.dolerLogo img{
+	max-width: 100%;
+}
+.arrrow{
+	width: 19%;
+ margin: 0 4%;
+ vertical-align: top;
+}
+.nameDiv{
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	color: #4c4e4e;
+	font-size: 1.5em;
+}
+.payWrapper h4{
+margin: 0 0 5px 0;
+color: #4c4e4e;
+font-size: 1.6em;
+}
+.payWrapper span{
+width: 20%;
+height: 5px;
+display: inline-block;
+background: #ccd2d8;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.payWrapper h6{
+margin: 16px 0;
+color: #404242;
+font-size: 1.2em;
+}
+.payWrapper a{
+color: #359cd6;
+font-size: 1.2em;
+font-weight: normal;
+}
+.contactWrapper{
+	border: 1px solid red;
+}
+.contactWrapper span{
+	word-wrap:normal;
+	display: block;
+	width: 45px;
+	color: #4c4e4e;
+	margin-top: 3px;
+}
+.connector{
+	width: 100%;
+	height: 5px;
+	margin-top: 21px;
+	background: #d5dbdf;
+}
+.number{
+	display: inline-block;
+   width: 45px;
+   height: 45px;
+   padding: 3px;
+   border: 4px solid #d5dbdf;
+border-radius: 100%;
+}
+.number span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 200%;
+	background:#d5dbdf;
+	border-radius: 100%;
+	color: #fff;
+	margin-top: 0;
+}
+.number.active {
+	border-width: 6px;
+}
+.number.active span{
+		background: #fff;
+		color:#4c4e4e;
+		line-height: 185%;
+}
+.marginLeft10Pre{
+	margin-left: 10%;
+}
+.marginRight10Pre{
+	margin-right: 10%;
+}
