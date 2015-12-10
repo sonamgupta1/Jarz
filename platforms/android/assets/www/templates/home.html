@@ -1,0 +1,129 @@
+<ion-view title="Jarz">
+    <ion-nav-bar align-title="center" class="footerHeaderColor header-size">
+
+    </ion-nav-bar>
+    <ion-content>
+
+        <div class="text-center" style="background-color:#e4e5e7">
+            <div class="row">
+                <div class="col">
+                    <i class="ion-android-radio-button-on">1</i>
+                </div>
+                <div class="col">
+                    <i class="ion-android-radio-button-on">2</i>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+
+                    Contact
+                </div>
+                <div class="col">Pay</div>
+            </div>
+
+        </div>
+
+
+        <div class="row text-center">
+            <div class="col">
+
+                <div>
+                    <span class="item item-avatar">
+                    <img src="img/icon.png">
+
+                    </span>
+                    You
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div>
+                    <span class="item item-avatar">
+                    <img src="img/icon.png">
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+
+                <div>
+                    <span class="item item-avatar">
+                    <img src="img/icon.png">
+                    </span>
+                    Jaff
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="list card">
+
+            <label class="item item-input item-select">
+
+                You Send:
+
+                <input type="text" ng-model="Data.amount" placeholder="  0.00" ng-change="getExchangeRate()">
+
+                <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
+
+                    <option selected>GBP</option>
+
+                        <!--for multiple currency option to select-->
+                    <!--<option value="">Select</option>-->
+                    <!--<option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>-->
+                </select>
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Jeff Receivers: {{exchangeRate}}
+
+                </div>
+                <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
+                    <option value=""></option>
+                    <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
+                </select>
+            </label>
+
+            <label class="item item-input">
+                For:
+                <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
+            </label>
+
+        </div>
+
+        <div class="text-center">
+
+            <h4>
+                Pay Very Little
+            </h4>
+
+            <h6 ng-hide="exchangeRate">
+                Estimated Rate is 1.5618 Fee is 0
+            </h6>
+
+            <h6 ng-show="exchangeRate">
+                Estimated Rate is 1.5618 Fee is 2.00 GBP
+            </h6>
+
+            <a href="#">
+                Redeem Free Transfer
+            </a>
+
+        </div>
+        <div ng-click="popupDemo()">
+            Popup1
+        </div>
+
+        <div ng-click="popupDemoNext()">
+            Popup2
+        </div>
+
+    </ion-content>
+    <div class="bar bar-footer footerHeaderColor">
+        <div class="title">PAY JAFF</div>
+    </div>
+</ion-view>
+
