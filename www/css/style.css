@@ -2,11 +2,48 @@
 .footerHeaderColor{
     background-color:#359CD6;
     color: #FFFFFF;
-
 }
-/*.verticalLine {*/
-    /*border-bottom: thick solid #ff0000;*/
-    /*margin-left: 600px;*/
-    /*margin-right: 600px;*/
-    /*position: relative;*/
-/*}*/
+.borderRed{
+	border: 1px solid red;
+}
+.positionRel{
+	position: relative;
+}
+.userWrapper{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+overflow: hidden;
+}
+.userWrapper img{
+	width: 100%;
+	height: 100%;
+}
+.marginleftMinus5Px{
+	margin-left: -5px;
+}
+.dolerLogo{
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	width: 13%;
+	margin-left: -6.5%;
+}
+.dolerLogo img{
+	width: 100%;
+}
+.arrrow{
+	width: 19%;
+ margin: 0 4%;
+ vertical-align: top;
+}
+.nameDiv{
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	color: #4c4e4e;
+	font-size: 1.5em;
+}
