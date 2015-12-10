@@ -3,37 +3,36 @@
 </ion-nav-bar>
 <ion-content>
 
-    <div class="row">
-        <div class="col">
-            <i class="ion-android-radio-button-on">1</i>
-        </div>
-        <div class="col">
-            <i class="ion-android-radio-button-on">2</i>
-        </div>
+
+<div class="row">
+
+    <div class="contactWrapper marginLeft10Pre text-center">
+        <div class="number"><span>1</span></div>
+        <span>Contact</span>
     </div>
-    <div class="row">
-        <div class="col">
-            Contact
-        </div>
-        <div class="col">Pay</div>
+<div class="connector"></div>
+    <div class="contactWrapper marginRight10Pre text-center">
+        <div class="number active"><span>2</span></div>
+        <span>Pay</span>
     </div>
 
+</div>
+
+
 <div class="row borderRed">
-<div class="col text-center positionRel">
+    <div class="col text-center positionRel">
         <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
         <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
         <div class="dolerLogo"><img src="img/doller-logo.png"></div>
+    </div>
 </div>
-</div>
-
 <div class="row borderRed">
-<div class="col text-center">
-<span class="nameDiv text-right">You</span>
-<span class="arrrow text-center"><img src="img/arrow.png"></span>
-<span class="nameDiv text-left">Jeff</span>
+    <div class="col text-center">
+        <span class="nameDiv text-right">You</span>
+        <span class="arrrow text-center"><img src="img/arrow.png"></span>
+        <span class="nameDiv text-left">Jeff</span>
+    </div>
 </div>
-</div>
-
 <div class="list card">
     <label class="item item-input item-select">
         You Send:
@@ -58,10 +57,16 @@
         <input type="text" placeholder="  For dinner,rent,etc" ng-model="purpose">
     </label>
 </div>
-<div class="text-center">
+
+<div class="row">
+<div class="col text-center payWrapper">
+
     <h4>
     Pay Very Little
     </h4>
+
+<span></span>
+
     <h6>
     Estimated Rate is 1.5618 Fee is 0
     </h6>
@@ -69,6 +74,9 @@
         Redeem Free Transfer
     </a>
 </div>
+</div>
+
+
 <div ng-click="popupDemo()">
     Popup1
 </div>
