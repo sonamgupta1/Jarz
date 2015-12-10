@@ -26,10 +26,19 @@
       <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="49" selection-start="3493" selection-end="3493" vertical-scroll-proportion="2.784" vertical-offset="0" max-vertical-offset="2220">
+            <state line="67" column="35" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.6064" vertical-offset="626" max-vertical-offset="2220">
               <folding>
                 <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="48" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -416,13 +425,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="914" selection-end="914" vertical-scroll-proportion="0.495283" vertical-offset="0" max-vertical-offset="636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/money/money.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="166" column="0" selection-start="5768" selection-end="5768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2580" />
@@ -459,9 +461,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="49" selection-start="3493" selection-end="3493" vertical-scroll-proportion="2.784" vertical-offset="0" max-vertical-offset="2220">
+        <state line="67" column="35" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.6064" vertical-offset="626" max-vertical-offset="2220">
           <folding>
             <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
           </folding>
