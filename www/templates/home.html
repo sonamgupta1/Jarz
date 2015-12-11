@@ -54,7 +54,7 @@
                 <input type="text" ng-model="exchangeRate" placeholder="0.00" ng-disabled="true">
                 <!--{{exchangeRate}}-->
             </div>
-            <div class="col col-33 noPadding positionRel">
+            <div class="col col-33 noPadding text-center positionRel">
                 <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
                     <option value="">AED</option>
                     <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>

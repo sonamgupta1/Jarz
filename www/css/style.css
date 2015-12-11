@@ -152,7 +152,7 @@ display: inline-block;
 color: #abbbc6;
 font-size: 1em;
 margin-top: 9px;
-font-weight:900;
+font-weight:bold;
 }
 .youSend input[type="text"], .youSend input[type="tel"]{
 width: 100%;
@@ -169,12 +169,11 @@ width: 100%;
 color: #fff;
 font-size: 1.1em;
 border: 0px none;
-height: auto;
 line-height: 25px;
 margin-bottom: 1px;
 padding:0 10px;
 height: 45px;
-text-align: center;
+text-align: center !important;
 background:#359cd6;
 font-weight: bold;
  -webkit-appearance:none;
@@ -244,8 +243,7 @@ line-height: normal;
     line-height: 52px;
     text-align: center;
     font-size: 20px;
-    font-weight: bold;
-    font-weight: normal;
+    font-weight: bolder;
 }
 .reedemFooter{
 	margin: 0px auto;
