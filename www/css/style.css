@@ -71,7 +71,6 @@ vertical-align: top;
 color: #4c4e4e;
 font-size: 1.5em;
 line-height: 25px;
-margin-top: -3px;
 }
 .payWrapper h4{
 margin: 0 0 5px 0;
@@ -121,7 +120,7 @@ background:#d5dbdf;
 border-radius: 100%;
 color: #fff;
 margin-top: 0;
-padding-top: 14px;
+padding-top: 16px;
 line-height: 0px;
 }
 .number.active span{
@@ -161,7 +160,6 @@ font-size: 1.1em;
 border: 0px none;
 height: auto;
 line-height: 25px;
-margin-top: -1px;
 margin-bottom: 1px;
 padding:0 10px;
 height: 45px;
@@ -233,5 +231,5 @@ line-height: normal;
 }
 .reedemFooter{
 	margin: 0px auto;
-	width: 210px;
+	width: 220px;
 }
