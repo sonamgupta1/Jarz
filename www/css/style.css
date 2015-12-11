@@ -221,7 +221,7 @@ margin: -8px 13% 0 4%;
 }
 .pullRight.redeem{
 margin-right: 0;
-margin-left:7px;
+margin-left:3%;
 }
 .transfer {
 margin: 30px 0 70px 0 !important;
@@ -285,9 +285,10 @@ line-height: normal;
 .topArrowRight{
 	position: absolute;
 	right: -8px;
-	top: 14px;
+	top: 50%;
 	width: 10px;
 	height: 20px;
+	margin-top: -20px;
 	/*border-top: 6px solid transparent;
 	border-left: 6px solid #d5dbdf;
 	border-left: 6px solid red;
@@ -296,9 +297,10 @@ line-height: normal;
 .topArrowLeft{
 	position: absolute;
 	left: -8px;
-	top: 14px;
+	top: 50%;
 	width: 10px;
 	height: 20px;
+	margin-top: -20px;
 	/*border-top: 6px solid transparent;
 	border-right: 6px solid #d5dbdf;
 	border-bottom: 6px solid transparent;*/
