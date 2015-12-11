@@ -26,7 +26,7 @@ padding: 0 !important;
 }
 .headerBg{
 background: #ecf0f3;
-padding:15px 0;
+padding:15px 0 13px 0;
 margin-bottom: 17px;
 border-bottom: 1px solid #d4d8da;
 }
@@ -98,24 +98,28 @@ margin-top: 21px;
 background: #d5dbdf;
 }
 .number{
+	float: left;
 display: inline-block;
 width: 45px;
 height: 45px;
 padding: 3px;
 border: 4px solid #d5dbdf;
 border-radius: 100%;
+margin-bottom: 3px;
 background: #ecf0f3;
 }
 .number span{
-display: inline-block;
+display: block;
+float: left;
 width: 100%;
 height: 100%;
 background:#d5dbdf;
 border-radius: 100%;
 color: #fff;
 margin-top: 0;
-padding-top: 5px;
-float: left;
+padding-top: 15px;
+line-height: 0px;
+border: 1px solid red;
 }
 .number.active span{
 background: #fff;
@@ -164,7 +168,8 @@ background:#2b80b0;
 padding-bottom: 8px !important;
 }
 .mainBg{
-background: url(../img/mainBg.png) center 200% no-repeat;
+background: url(../img/mainBg.png) center 230px no-repeat;
+background-size: cover;
 }
 .popup-container.active .popup{
 border-radius: 5px;
