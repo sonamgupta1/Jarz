@@ -16,7 +16,7 @@ padding-bottom: 0 !important;
 margin-top: 0 !important;
 }
 .marginTopMinus3px{
-margin-top: -3px !important;
+margin-top: -1px !important;
 }
 .marginTopForCard{
 margin: 10px 18px 15px 18px !important;
@@ -114,7 +114,8 @@ background:#d5dbdf;
 border-radius: 100%;
 color: #fff;
 margin-top: 0;
-padding-top: 4px;
+padding-top: 5px;
+float: left;
 }
 .number.active span{
 background: #fff;
@@ -199,7 +200,12 @@ margin: 20px 0 60px 0 !important;
 }
 .footerPadding{
 height: 54px;
+line-height: 0;
 }
 .footerPadding .title{
-line-height: 53px;
+	position: relative;
+	width: 100%;
+	float: left;
+	text-align: center;
+line-height: normal;
 }
