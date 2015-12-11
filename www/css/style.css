@@ -31,7 +31,7 @@ padding: 0 !important;
 }
 .headerBg{
 background: #ecf0f3;
-padding:15px 0 13px 0;
+padding:16px 0 13px 0;
 margin-bottom: 17px;
 border-bottom: 1px solid #d4d8da;
 }
@@ -251,8 +251,7 @@ line-height: normal;
 }
 .reedemFooter{
 	margin: 0px auto;
-	width: 230px;
-	border: 1px solid red;
+	width: 235px;
 }
 .whiteArrow{
 	position: absolute;
