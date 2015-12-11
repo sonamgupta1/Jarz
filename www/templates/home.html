@@ -1,4 +1,4 @@
-<ion-view title="Jarz">
+<ion-view hide-nav-bar="true">
 <ion-nav-bar align-title="center" class="footerHeaderColor header-size">
 </ion-nav-bar>
 <ion-content>
@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col text-center">
             <span class="nameDiv text-right">You</span>
-            <span class="arrrow text-center"><img src="img/arrow.png"></span>
+            <span class="arrrow text-center"><img src="img/arrow.svg"></span>
             <span class="nameDiv text-left">Jeff</span>
         </div>
     </div>
@@ -37,27 +37,29 @@
                 <input type="tel" ng-model="Data.amount" placeholder="0.00" ng-change="getExchangeRate()">
             </div>
             <div class="col col-33 noPadding">
-                <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
-                    <!--<option selected>GBP</option>-->
-                    <!--for multiple currency option to select-->
+
+                    <div class="gbpWrapper">GBP</div>
+
+              <!--   <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
                     <option value="">AED</option>
                     <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
-                </select>
+                </select> -->
             </div>
         </div>
         <div class="row youSend borderTop1Px">
             <div class="col col-33 noPaddingBottom">
-                <span class="marginTopMinus3px">Jeff <br>Receivers:</span>
+                <span class="marginTopMinus3px">Jeff <br>Receives:</span>
             </div>
             <div class="col col-33 noPaddingBottom">
                 <input type="text" ng-model="exchangeRate" placeholder="0.00" ng-disabled="true">
                 <!--{{exchangeRate}}-->
             </div>
-            <div class="col col-33 noPadding">
+            <div class="col col-33 noPadding positionRel">
                 <select ng-model="Data.toCurrency" ng-change="getExchangeRate()">
                     <option value="">AED</option>
                     <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
                 </select>
+                <div class="whiteArrow"></div>
             </div>
         </div>
         <div class="row youSend borderTop1Px forPadding">
@@ -90,7 +92,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-center estimated">
+        <div class="col text-center estimated feeMarginTop">
             Fee is 0
         </div>
     </div>
@@ -105,10 +107,5 @@
     </div>
 </div>
 </ion-content>
-
 <div class="footerBottom">PAY JEFF</div>
-
-<div class="bar bar-footer footerHeaderColor footerPadding">
-    <div class="title">PAY JEFF</div>
-</div>
 </ion-view>
