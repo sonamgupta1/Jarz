@@ -1,122 +1,118 @@
 <ion-view hide-nav-bar="true">
-<ion-nav-bar align-title="center" class="footerHeaderColor header-size">
-</ion-nav-bar>
-<ion-content>
-<div class="mainBg">
-    <div class="row headerBg">
-        <div class="col first">
-        <div class="contactWrapper marginLeft14Pre text-center positionRel">
-            <div class="topArrowRight"></div>
-            <div class="number"><span>1</span></div>
-            <span>Contact</span>
-        </div>
-</div>
-<div class="col mid">
-        <div class="connector"></div>
-</div>
-<div class="col last">
-        <div class="contactWrapper marginRight14Pre text-center positionRel">
-            <div class="topArrowLeft"></div>
-            <div class="number active"><span>2</span></div>
-            <span>Pay</span>
-        </div>
-</div>
-    </div>
-    <div class="row">
-        <div class="col text-center positionRel">
-            <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
-            <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
-            <div class="dolerLogo"><img src="img/fundtransfer.svg"></div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-center">
-            <span class="nameDiv text-right">You</span>
-            <span class="arrrow text-center"><img src="img/arrow.svg"></span>
-            <span class="nameDiv text-left">Jeff</span>
-        </div>
-    </div>
-    <div class="list card text-left marginTopForCard">
-        <div class="row youSend">
-            <div class="col col-33 noPaddingBottom">
-                <span>You Send:</span>
+    <ion-nav-bar align-title="center" class="footerHeaderColor header-size">
+    </ion-nav-bar>
+    <ion-content>
+        <div class="mainBg">
+            <div class="row headerBg">
+                <div class="col first">
+                    <div class="contactWrapper marginLeft14Pre text-center positionRel">
+                        <div class="topArrowRight"></div>
+                        <div class="number"><span>1</span></div>
+                        <span>Contact</span>
+                    </div>
+                </div>
+                <div class="col mid">
+                    <div class="connector"></div>
+                </div>
+                <div class="col last">
+                    <div class="contactWrapper marginRight14Pre text-center positionRel">
+                        <div class="topArrowLeft"></div>
+                        <div class="number active"><span>2</span></div>
+                        <span>Pay</span>
+                    </div>
+                </div>
             </div>
-            <div class="col col-33 noPaddingBottom">
-                <input type="tel" ng-model="Data.amount" placeholder="0.00" ng-change="getExchangeRate()">
+            <div class="row">
+                <div class="col text-center positionRel">
+                    <div class="userWrapper text-center"><img src="img/user1.jpg"></div>
+                    <div class="userWrapper text-center marginleftMinus5Px"><img src="img/user2.jpg"></div>
+                    <div class="dolerLogo"><img src="img/fundtransfer.svg"></div>
+                </div>
             </div>
-            <div class="col col-33 noPadding">
+            <div class="row">
+                <div class="col text-center">
+                    <span class="nameDiv text-right">You</span>
+                    <span class="arrrow text-center"><img src="img/arrow.svg"></span>
+                    <span class="nameDiv text-left">Jeff</span>
+                </div>
+            </div>
+            <div class="list card text-left marginTopForCard">
+                <div class="row youSend">
+                    <div class="col col-33 noPaddingBottom">
+                        <span>You Send:</span>
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <input type="tel" ng-model="Data.amount" placeholder="0.00" ng-change="getExchangeRate()">
+                    </div>
+                    <div class="col col-33 noPadding">
 
-                    <div class="gbpWrapper">GBP</div>
+                        <div class="gbpWrapper">GBP</div>
 
-            </div>
-        </div>
-        <div class="row youSend borderTop1Px">
-            <div class="col col-33 noPaddingBottom">
-                <span class="marginTopMinus3px">Jeff <br>Receives:</span>
-            </div>
-            <div class="col col-33 noPaddingBottom">
-                <input type="text" ng-model="exchangeRate" placeholder="0.00" ng-disabled="true">
-                <!--{{exchangeRate}}-->
-            </div>
-            <div class="col col-33 noPadding text-center positionRel">
-                <select ng-model="Data.toCurrency" ng-change="getExchangeRate()" class="ion-input-select">
-                    <option value="">SELECT</option>
-                    <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
-                </select>
-                <div class="whiteArrow"></div>
-            </div>
-        </div>
-        <div class="row youSend borderTop1Px forPadding">
-            <div class="col col-33">
-                <span>  For:</span>
-            </div>
-            <div class="col col-67">
-                <input type="text" placeholder="dinner, rent, etc" ng-model="purpose">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-center payWrapper">
-            <h4>
-            Pay Very Little
-            </h4>
-            <span></span>
-            <!-- <h6>
-            <div class="estimated"> Estimated Rate is 1.5618  </div><img src="img/question-mark.png" class="questionMargin">
-            </h6>
-            <h6> Fee is 0</h6>
-            <a href="#">
-                Redeem Free Transfer <img src="img/question-mark.png" class="questionMargin">
-            </a> -->
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-right estimated">
-            <span>Estimated Rate is 1.5618</span> <span class="pullRight" ng-click="popupDemo()"><img src="img/question.svg"></span>
-        </div>
-    </div>
-    <div class="row" ng-hide="exchangeRate">
-        <div class="col text-center estimated feeMarginTop">
-            Fee is 0 GBP
-        </div>
-    </div>
+                    </div>
+                </div>
+                <div class="row youSend borderTop1Px">
+                    <div class="col col-33 noPaddingBottom">
+                        <span class="marginTopMinus3px">Jeff <br>Receives:</span>
+                    </div>
+                    <div class="col col-33 noPaddingBottom">
+                        <input type="text" ng-model="exchangeRate" placeholder="0.00" ng-disabled="true">
+                        <!--{{exchangeRate}}-->
+                    </div>
+                    <div class="col col-33 noPadding text-center positionRel">
+                        <select ng-init="Data.toCurrency = 'AED'" ng-model="Data.toCurrency"
+                                ng-options="key as key for (key,value) in result.rates">
+                        </select>
 
-<div class="row" ng-show="exchangeRate">
-        <div class="col text-center estimated feeMarginTop">
-            Fee is 2.00 GBP
-        </div>
-    </div>
+                        <div class="whiteArrow"></div>
+                    </div>
+                </div>
+                <div class="row youSend borderTop1Px forPadding">
+                    <div class="col col-33">
+                        <span>  For:</span>
+                    </div>
+                    <div class="col col-67">
+                        <input type="text" placeholder="dinner, rent, etc" ng-model="purpose">
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-click="getValue()">
+                <div class="col text-center payWrapper">
+                    <h4>
+                        Pay Very Little
+                    </h4>
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-right estimated">
+                    <span>Estimated Rate is 1.5618</span> <span class="pullRight" ng-click="popupDemo()"><img
+                        src="img/question.svg"></span>
+                </div>
+            </div>
+            <div class="row" ng-hide="exchangeRate">
+                <div class="col text-center estimated feeMarginTop">
+                    Fee is 0 GBP
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col text-right estimated transfer">
+            <div class="row" ng-show="exchangeRate">
+                <div class="col text-center estimated feeMarginTop">
+                    Fee is 2.00 GBP
+                </div>
+            </div>
 
-            <div class="reedemFooter">
-            <span><a href="#">Redeem Free Transfer </a></span> <span class="pullRight redeem" ng-click="popupDemoNext()"><img src="img/question.svg"></span>
+            <div class="row">
+                <div class="col text-right estimated transfer">
 
+                    <div class="reedemFooter">
+                        <span><a href="#">Redeem Free Transfer </a></span> <span class="pullRight redeem"
+                                                                                 ng-click="popupDemoNext()"><img
+                            src="img/question.svg"></span>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</ion-content>
-<div class="footerBottom">PAY JEFF</div>
+    </ion-content>
+    <div class="footerBottom">PAY JEFF</div>
 </ion-view>

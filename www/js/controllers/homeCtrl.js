@@ -2,9 +2,16 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
 
 
     $scope.Data = {};
+    $scope.Data = {"toCurrency": null};
     $scope.Data.amount = "";
     $scope.Data.currentDate = $filter("date")(Date.now(), 'yyyy-MM-dd');
     $scope.Data.date = $scope.Data.currentDate;
+
+    $scope.getValue = function () {
+        var data = {};
+        data = $scope.Data;
+        console.log("Data is ", data)
+    }
 
     var apiKey = "33c97fa9a95344919f3f31d1005ffc41";
     var baseUrl = "http://openexchangerates.org/api/";
@@ -24,7 +31,6 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
         });
 
     $scope.getExchangeRate = function () {
-
         if ($scope.Data.date != $scope.Data.currentDate) {
 //            $ionicLoading.show();
             $scope.url = baseUrl + "historical/" + $scope.Data.date + ".json?app_id=" + apiKey;
