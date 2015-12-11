@@ -59,10 +59,15 @@
                 <!--{{exchangeRate}}-->
             </div>
             <div class="col col-33 noPadding text-center positionRel">
-                <select ng-model="Data.toCurrency" ng-change="getExchangeRate()" class="ion-input-select">
-                    <option value="">AED</option>
-                    <option ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
+                <!--<select ng-model="Data.toCurrency" ng-change="getExchangeRate()" class="ion-input-select">
+                    &lt;!&ndash;<option value="">AED</option>&ndash;&gt;
+                    <option ng-selected="{{key == currencySelected}}" ng-repeat="(key,value) in result.rates" value="{{key}}">{{key}}</option>
                 </select>
+                -->
+                <select ng-init="Data.toCurrency = 'AED'" ng-model="Data.toCurrency"
+                        ng-options="key as key for (key,value) in result.rates">
+                </select>
+
                 <div class="whiteArrow"></div>
             </div>
         </div>
@@ -75,19 +80,12 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" ng-click="getValue()">
         <div class="col text-center payWrapper">
             <h4>
             Pay Very Little
             </h4>
             <span></span>
-            <!-- <h6>
-            <div class="estimated"> Estimated Rate is 1.5618  </div><img src="img/question-mark.png" class="questionMargin">
-            </h6>
-            <h6> Fee is 0</h6>
-            <a href="#">
-                Redeem Free Transfer <img src="img/question-mark.png" class="questionMargin">
-            </a> -->
         </div>
     </div>
     <div class="row">
