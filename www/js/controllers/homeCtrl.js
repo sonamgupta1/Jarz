@@ -71,7 +71,7 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
 
     $scope.popupDemoNext = function () {
         var alertPopup = $ionicPopup.alert({
-            template: 'Every time a friend signs up with your code,they get their first transfer free (up to 5.00 USD). When they make their first transfer, you will also receive a free transfer (up to 5.00 USD),which will be applied to your account automatically. '
+            template: 'Every time a friend signs up with your code, they get their first transfer free (up to 5.00 USD). When they make their first transfer, you will also receive a free transfer (up to 5.00 USD), which will be applied to your account automatically. '
         });
         alertPopup.then(function (res) {
             console.log('Thanks');

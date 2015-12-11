@@ -278,3 +278,19 @@ line-height: normal;
 .feeMarginTop{
 	margin-top: -4px;
 }
+.topArrowRight{
+	position: absolute;
+	right: -5px;
+	top: 16px;
+	border-top: 6px solid transparent;
+	border-left: 6px solid #d5dbdf;
+	border-bottom: 6px solid transparent;
+}
+.topArrowLeft{
+	position: absolute;
+	left: -5px;
+	top: 16px;
+	border-top: 6px solid transparent;
+	border-right: 6px solid #d5dbdf;
+	border-bottom: 6px solid transparent;
+}
