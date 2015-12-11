@@ -177,20 +177,11 @@ padding:0 10px;
 height: 45px;
 background:#359cd6;
 font-weight: bold;
-/*text-indent: 13%;*/
-text-align: center;
+text-indent: 34%;
+/*text-align: center;*/
  -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-}
-.youSend select option {
-	color: red;
-	text-align: center;
-	display: block;
-}
-.youSend select option.optionClass{
-	display: block;
-	text-align: center;
 }
 .forPadding{
 padding-bottom: 8px !important;
