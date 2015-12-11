@@ -1,67 +1,73 @@
 /* Empty. Add your own CSS if you like */
 .footerHeaderColor{
-    background-color:#359CD6;
-    color: #FFFFFF;
+background-color:#359CD6;
+color: #FFFFFF;
 }
 .positionRel{
-	position: relative;
+position: relative;
 }
 .borderTop1Px{
 border-top: 1px solid #e7e7e7;
 }
 .noPaddingBottom{
-	padding-bottom: 0 !important;
+padding-bottom: 0 !important;
 }
 .noMarginTop{
-	margin-top: 0 !important;
+margin-top: 0 !important;
+}
+.marginTopMinus3px{
+margin-top: -3px !important;
 }
 .marginTopForCard{
-	margin-top: 4px !important;
+margin: 10px 18px 15px 18px !important;
+}
+.noPadding{
+padding: 0 !important;
 }
 .headerBg{
- background: #ecf0f3;
- padding:15px 0;
- margin-bottom: 17px;
- border-bottom: 1px solid #d4d8da;
+background: #ecf0f3;
+padding:15px 0;
+margin-bottom: 17px;
+border-bottom: 1px solid #d4d8da;
 }
 .userWrapper{
-	display: inline-block;
-	width: 120px;
-	height: 120px;
-	-webkit-border-radius: 100%;
+display: inline-block;
+width: 120px;
+height: 120px;
+-webkit-border-radius: 100%;
 -moz-border-radius: 100%;
 border-radius: 100%;
 overflow: hidden;
 }
 .userWrapper img{
-	width: 100%;
-	height: 100%;
+width: 100%;
+height: 100%;
 }
 .marginleftMinus5Px{
-	margin-left: -5px;
+margin-left: -5px;
 }
 .dolerLogo{
-	position: absolute;
-	left: 50%;
-	top: 70px;
-	width: 13%;
-	margin-left: -6.5%;
+position: absolute;
+left: 50%;
+top: 70px;
+width: 13%;
+margin-left: -6.5%;
 }
 .dolerLogo img{
-	max-width: 100%;
+max-width: 100%;
 }
 .arrrow{
-	width: 19%;
- margin: 0 4%;
- vertical-align: top;
+width: 19%;
+margin: 0 4%;
+vertical-align: top;
 }
 .nameDiv{
-	display: inline-block;
-	width: 35%;
-	vertical-align: top;
-	color: #4c4e4e;
-	font-size: 1.5em;
-	line-height: 25px;
+display: inline-block;
+width: 35%;
+vertical-align: top;
+color: #4c4e4e;
+font-size: 1.5em;
+line-height: 25px;
 }
 .payWrapper h4{
 margin: 0 0 5px 0;
@@ -74,121 +80,126 @@ height: 5px;
 margin:16px 0;
 display: inline-block;
 background: #ccd2d8;
-	-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
 }
 .contactWrapper span{
-	word-wrap:normal;
-	display: block;
-	width: 45px;
-	color: #4c4e4e;
-	margin-top: 3px;
+word-wrap:normal;
+display: block;
+width: 45px;
+color: #4c4e4e;
+margin-top: 3px;
 }
 .connector{
-	width: 100%;
-	height: 5px;
-	margin-top: 21px;
-	background: #d5dbdf;
+width: 100%;
+height: 5px;
+margin-top: 21px;
+background: #d5dbdf;
 }
 .number{
-	display: inline-block;
-   width: 45px;
-   height: 45px;
-   padding: 3px;
-   border: 4px solid #d5dbdf;
+display: inline-block;
+width: 45px;
+height: 45px;
+padding: 3px;
+border: 4px solid #d5dbdf;
 border-radius: 100%;
 background: #ecf0f3;
 }
 .number span{
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	line-height: 30px;
-	background:#d5dbdf;
-	border-radius: 100%;
-	color: #fff;
-	margin-top: 0;
-}
-.number.active {
-	border-width: 6px;
+display: inline-block;
+width: 100%;
+height: 100%;
+background:#d5dbdf;
+border-radius: 100%;
+color: #fff;
+margin-top: 0;
+padding-top: 4px;
 }
 .number.active span{
-		background: #fff;
-		color:#4c4e4e;
-		line-height: 185%;
+background: #fff;
+color:#4c4e4e;
 }
 .marginLeft14Pre{
-	margin-left: 14%;
+margin-left: 14%;
 }
 .marginRight14Pre{
-	margin-right: 14%;
+margin-right: 14%;
 }
 .youSend{
-	padding: 0 5px !important;
-	margin-top: 0px !important;
+padding: 0 0 0 5px !important;
+margin-top: 0px !important;
 }
 .youSend span{
-	display: inline-block;
-	color: #abbbc6;
-	font-size: 1.1em;
-	 margin-top: 12px;
+display: inline-block;
+color: #abbbc6;
+font-size: 1.1em;
+margin-top: 12px;
 }
 .youSend input[type="text"], .youSend input[type="tel"]{
-	width: 100%;
-	color: #182931;
-	font-size: 1.2em;
-	border: 0px none;
-	height: auto;
-	line-height: 25px;
-	margin-top: 7px;
-	background: none;
+width: 100%;
+color: #182931;
+font-size: 1.2em;
+border: 0px none;
+height: auto;
+line-height: 25px;
+margin-top: 7px;
+background: none;
 }
 .youSend select{
-	width: 100%;
-	color: #fff;
-	font-size: 1.1em;
-	border: 0px none;
-	height: auto;
-	line-height: 25px;
-	margin-top: -6px;
-	margin-bottom: 1px;
-	padding:0 10px;
-	height: 50px;
-	background:#2b80b0;
+width: 100%;
+color: #fff;
+font-size: 1.1em;
+border: 0px none;
+height: auto;
+line-height: 25px;
+margin-top: -1px;
+margin-bottom: 1px;
+padding:0 10px;
+height: 45px;
+background:#2b80b0;
 }
 .forPadding{
-	padding-bottom: 8px !important;
+padding-bottom: 8px !important;
 }
 .mainBg{
-	background: url(../img/mainBg.png) center 265px no-repeat;
+background: url(../img/mainBg.png) center 200% no-repeat;
 }
 .popup-container.active .popup{
-	border-radius: 5px;
-	width: 90%;
+border-radius: 5px;
+width: 90%;
 }
 .popup-head{
 display: none;
 }
 .popup-body{
-	color: #4c4e4e;
+color: #4c4e4e;
 }
 .estimated{
-	color: #404242;
-      font-size: 1.2em;
-      padding-bottom: 0;
-      padding-top:0;
+color: #404242;
+font-size: 1.2em;
+padding-bottom: 0;
+padding-top:0;
 }
 .estimated span{
-	display: inline-block;
+display: inline-block;
 }
 .estimated span a{
 color: #359cd6;
 }
 .pullRight{
-	float: right;
-	margin: -8px 13% 0 4%;
+float: right;
+margin: -8px 13% 0 4%;
+}
+.pullRight.redeem{
+margin-right: 16%;
 }
 .transfer {
-	margin: 20px 0 60px 0 !important;
+margin: 20px 0 60px 0 !important;
+}
+.footerPadding{
+height: 54px;
+}
+.footerPadding .title{
+line-height: 53px;
 }
