@@ -4,17 +4,23 @@
 <ion-content>
 <div class="mainBg">
     <div class="row headerBg">
+        <div class="col first">
         <div class="contactWrapper marginLeft14Pre text-center positionRel">
             <div class="topArrowRight"></div>
             <div class="number"><span>1</span></div>
             <span>Contact</span>
         </div>
+</div>
+<div class="col mid">
         <div class="connector"></div>
+</div>
+<div class="col last">
         <div class="contactWrapper marginRight14Pre text-center positionRel">
             <div class="topArrowLeft"></div>
             <div class="number active"><span>2</span></div>
             <span>Pay</span>
         </div>
+</div>
     </div>
     <div class="row">
         <div class="col text-center positionRel">
@@ -42,10 +48,6 @@
 
                     <div class="gbpWrapper">GBP</div>
 
-              <!--   <select ng-model="Data.fromCurrency" ng-change="getExchangeRate()">
-                    <option value="">AED</option>
-                    <option ng-repeat="(key,value)  in result.rates" value="{{key}}">{{key}}</option>
-                </select> -->
             </div>
         </div>
         <div class="row youSend borderTop1Px">
@@ -93,11 +95,18 @@
             <span>Estimated Rate is 1.5618</span> <span class="pullRight" ng-click="popupDemo()"><img src="img/question.svg"></span>
         </div>
     </div>
-    <div class="row">
+    <div class="row" ng-hide="exchangeRate">
         <div class="col text-center estimated feeMarginTop">
             Fee is 0 GBP
         </div>
     </div>
+
+<div class="row" ng-show="exchangeRate">
+        <div class="col text-center estimated feeMarginTop">
+            Fee is 2.00 GBP
+        </div>
+    </div>
+
     <div class="row">
         <div class="col text-right estimated transfer">
 

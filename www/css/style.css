@@ -103,7 +103,7 @@ margin-top: 3px;
 .connector{
 width: 100%;
 height: 3px;
-margin-top: 21px;
+margin-top: 26px;
 background: #d5dbdf;
 }
 .number{
@@ -177,7 +177,8 @@ padding:0 10px;
 height: 45px;
 background:#359cd6;
 font-weight: bold;
-text-indent: 34%;
+/*text-indent: 34%;*/
+padding-left:17%;
 /*text-align: center;*/
  -webkit-appearance:none;
     -moz-appearance:none;
@@ -270,8 +271,9 @@ line-height: normal;
     font-weight: bold;
     height: 45px;
     line-height: 25px;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 0;
+    padding-left:17%;
     padding-top: 22px;
     background: #2b80b0;
 }
@@ -299,4 +301,27 @@ line-height: normal;
 	float: left;
 	width: 45px;
 	border: 1px solid red;
+}
+.first{
+	float: left;
+	width: auto;
+	padding: 0;
+	border: 1px solid green;
+}
+.first .contactWrapper{
+	float: right;
+	margin-top: 4px;
+}
+.mid{
+	padding: 0;
+	border: 1px solid green;
+}
+.last{
+	float: left;
+	width: auto;
+	padding: 0;
+	border: 1px solid green;
+}
+.last .contactWrapper{
+	margin-top: 4px;
 }

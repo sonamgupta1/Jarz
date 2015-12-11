@@ -34,7 +34,7 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
                     $scope.historicalresult = response;
                     fx.rates = response.rates;
                     fx.base = response.base;
-                    $scope.exchangeRate = fx($scope.Data.amount).from($scope.Data.fromCurrency).to($scope.Data.toCurrency).toFixed(2);
+                    $scope.exchangeRate = fx($scope.Data.amount).from('GBP').to($scope.Data.toCurrency).toFixed(2);
                 })
                 .error(function (response, status) {
                     $scope.showAlert('Error!!!', response.message);
@@ -46,7 +46,7 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
         else {
             fx.rates = $scope.result.rates;
             fx.base = $scope.result.base;
-            $scope.exchangeRate = fx($scope.Data.amount).from($scope.Data.fromCurrency).to($scope.Data.toCurrency).toFixed(2);
+            $scope.exchangeRate = fx($scope.Data.amount).from('GBP').to($scope.Data.toCurrency).toFixed(2);
         }
     };
 
@@ -62,7 +62,7 @@ IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $h
 
     $scope.popupDemo = function () {
         var alertPopup = $ionicPopup.alert({
-            template: 'The estimated exchange rate may change by the time Jeff creates an account and receives your payment. We will tell you the final rate and total cost when the tranfser is complete!'
+            template: 'The estimated exchange rate may change by the time Jeff creates an account and receives your payment. We will tell you the final rate and total cost when the transfer is complete!'
         });
         alertPopup.then(function (res) {
             console.log('Thanks');
