@@ -1,4 +1,4 @@
-IonicBankApp.controller('HomeCtrl', function ($scope, $state, $filter, $ionicLoading, $http, $ionicPopup) {
+IonicBankApp.controller('HomeCtrl', function ($scope, $filter, $ionicLoading, $http, $ionicPopup) {
 
 
     $scope.Data = {};
