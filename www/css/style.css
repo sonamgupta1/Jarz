@@ -284,7 +284,7 @@ line-height: normal;
 }
 .topArrowRight{
 	position: absolute;
-	right: -6px;
+	right: -5px;
 	top: 17px;
 	border-top: 6px solid transparent;
 	border-left: 6px solid #d5dbdf;
@@ -293,7 +293,7 @@ line-height: normal;
 }
 .topArrowLeft{
 	position: absolute;
-	left: -6px;
+	left: -5px;
 	top: 17px;
 	border-top: 6px solid transparent;
 	border-right: 6px solid #d5dbdf;
