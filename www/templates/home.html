@@ -60,7 +60,7 @@
                     </div>
                     <div class="col col-33 noPadding text-center positionRel">
                         <select ng-init="Data.toCurrency = 'AED'" ng-model="Data.toCurrency"
-                                ng-options="key as key for (key,value) in result.rates">
+                                ng-options="key as key for (key,value) in result.rates" ng-change="getExchangeRate()">
                         </select>
 
                         <div class="whiteArrow"></div>

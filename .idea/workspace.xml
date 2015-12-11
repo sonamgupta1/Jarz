@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b96cf29-875e-43c0-ad87-7ffcea506b0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/leftPointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/rightPointer.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/home.html" afterPath="$PROJECT_DIR$/www/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jarz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="26" selection-start="3437" selection-end="3437" vertical-scroll-proportion="-15.0" vertical-offset="705" max-vertical-offset="1845">
+            <state line="62" column="117" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.504" vertical-offset="615" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
@@ -46,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="1" selection-start="5282" selection-end="5282" vertical-scroll-proportion="7.101695" vertical-offset="311" max-vertical-offset="5010">
+            <state line="45" column="1" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="5010">
               <folding />
             </state>
           </provider>
@@ -81,10 +79,10 @@
         <option value="$PROJECT_DIR$/www/lib/money/money.js" />
         <option value="$PROJECT_DIR$/www/lib/money/money.min.js" />
         <option value="$PROJECT_DIR$/www/templates/currency.html" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/homeCtrl.js" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/templates/home.html" />
       </list>
     </option>
@@ -498,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="26" selection-start="3437" selection-end="3437" vertical-scroll-proportion="-15.0" vertical-offset="705" max-vertical-offset="1845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/homeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1395">
@@ -514,7 +505,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="1" selection-start="5282" selection-end="5282" vertical-scroll-proportion="7.101695" vertical-offset="311" max-vertical-offset="5010">
+        <state line="45" column="1" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="5010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="117" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.504" vertical-offset="615" max-vertical-offset="1845">
           <folding />
         </state>
       </provider>
